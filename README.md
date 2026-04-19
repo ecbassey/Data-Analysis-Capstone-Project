@@ -1,6 +1,6 @@
 # Data-Analysis-Capstone-Project
 
-## TITLE: Airline Performance & Delay Intelligence System
+## OPTION 1: Airline Performance & Delay Intelligence System
 
 
 
@@ -34,3 +34,19 @@ Identify congestion points, peak traffic times, and bottlenecks to improve airpo
 
 #### Government & Aviation Regulators
 Monitor industry performance, assess the impact of disruptions (like COVID-19), and make informed policy or infrastructure decisions.
+
+
+-------------------------------------------
+
+## OPTION 2: Fertility Rate Intelligence System
+
+### Problem Statement
+This project aims to build a system that integrates and analyzes fertility-related data to uncover trends, identify driving factors, and support data-driven insights into global population patterns.
+
+### Insights and Solutions:
+This project aims to uncover:
+- How has fertility rate changed globally over time
+- Which countries have the highest/lowest rates
+- Is fertility declining as GDP rises
+- Does female education reduce fertility rates
+- Are developed countries below replacement level
