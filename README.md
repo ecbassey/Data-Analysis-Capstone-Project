@@ -5,7 +5,7 @@
 
 
 ### Problem Statement
-Airlines face frequent delays and cancellations that hurt efficiency and customer satisfaction, yet existing data is underutilized. This project builds a system to analyze flight performance, identify delay patterns, and generate actionable insights for better decision-making.
+Airlines face frequent delays and cancellations that hurt efficiency and customer satisfaction. This project builds a system to analyze flight performance, analyze airline, analyze airport congestion, identify delay patterns, and generate actionable insights for better decision-making.
 
 
 ### Tools/Skills use:
