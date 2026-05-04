@@ -57,9 +57,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.header("Analysis Objectives")
-    st.text("To analyze airline performance and delay patterns across time, airports, "
-    "and carriers by integrating SQL-based data processing, Python analytics, and geospatial techniques. " \
-    "The project aims to identify the most reliable airlines, peak delay periods, major airport bottlenecks,"
+    st.text("This project aims to identify the most reliable airlines, peak delay periods, major airport bottlenecks,"
     " and key factors driving delays, while uncovering geographic patterns to support data-driven insights "
     "and operational improvements.")
    
