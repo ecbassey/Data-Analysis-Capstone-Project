@@ -5,11 +5,12 @@
 
 
 ### Problem Statement
-Airlines face frequent delays and cancellations that hurt efficiency and customer satisfaction. This project builds a system to analyze flight performance, analyze airline, analyze airport congestion, identify delay patterns, and generate actionable insights for better decision-making.
+This project analyzes how COVID-19 impacted airline performance in the U.S., what recovery look like through delays, cancellations, and airport congestion patterns. The project would analyze flight performance, analyze airline, analyze airport congestion and identify delay patterns.
 
 
 ### Tools/Skills use:
 - Data ingestion: scraping, CSV
+- Data Transformation: BigQuery
 - Data Storage: SQL
 - Data cleaning & analysis: Python / Pandas
 - Software design: OOP
@@ -19,10 +20,11 @@ Airlines face frequent delays and cancellations that hurt efficiency and custome
 ### Insights and Solutions:
 This project aims to transform raw flight data into meaningful insights that help airlines, airports, and stakeholders better understand and manage delays and cancellations. This project aims to uncover:
 - Which airline is most reliable
-- What time of day has the highest delays
+- What month has the highest delays - Time-based trends in delays (months, seasons, etc.)
 - Did the industry recover after COVID
 - Which airports are bottlenecks
 - What factors most influence delays
+- Delay and cancellation patterns across different airlines
 
 
 ### Business and community impact of this anlysis:
