@@ -7,6 +7,8 @@ st.markdown(
     '<a href="https://ecbassey-data-analysis-capstone-project-app-37dptu.streamlit.app/" target="_blank">Project Link</a>', unsafe_allow_html=True
 )
 
+[Project Link](https://ecbassey-data-analysis-capstone-project-app-37dptu.streamlit.app/)
+
 ### Problem Statement
 This project analyzes how COVID-19 impacted airline performance in the U.S., what recovery look like through delays, cancellations, and airport congestion patterns. The project would analyze flight performance, analyze airline, analyze airport congestion and identify delay patterns.
 
