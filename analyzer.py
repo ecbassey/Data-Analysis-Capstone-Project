@@ -6,12 +6,17 @@ class Analyzer:
     def airline_reliability(self):
         df = self.df.copy()
         df['arr_delay'] = df['arr_delay'] / df['arr_flights']
+        #df['delay_rate'] = df['arr_del15'].mean()
+        #df['arr_del15'] = df['arr_del15'].gt(15)
+        df['is_delayed'] = df['arr_del15']/df['arr_flights'] * 100
+        
 
         return (
             df.groupby('carrier_name')
             #self.df.groupby(['carrier_name', 'carrier'])
             .agg(avg_delay=('arr_delay', 'mean'),
-                 delay_rate=('arr_del15', 'mean'),
+                 delay_rate=('is_delayed', 'mean'),
+                 #delay_rate=('arr_del15', 'mean'),
                  total_flights=('arr_flights', 'sum'))
             .sort_values(by='delay_rate')
         )
