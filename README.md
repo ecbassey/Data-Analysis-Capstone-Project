@@ -3,6 +3,9 @@
 ## OPTION 1: Airline Performance & Delay Intelligence System
 
 
+st.markdown(
+    '<a href="https://ecbassey-data-analysis-capstone-project-app-37dptu.streamlit.app/" target="_blank">Project Link</a>', unsafe_allow_html=True
+)
 
 ### Problem Statement
 This project analyzes how COVID-19 impacted airline performance in the U.S., what recovery look like through delays, cancellations, and airport congestion patterns. The project would analyze flight performance, analyze airline, analyze airport congestion and identify delay patterns.
@@ -38,17 +41,3 @@ Identify congestion points, peak traffic times, and bottlenecks to improve airpo
 Monitor industry performance, assess the impact of disruptions (like COVID-19), and make informed policy or infrastructure decisions.
 
 
--------------------------------------------
-
-## OPTION 2: Fertility Rate Intelligence System
-
-### Problem Statement
-This project aims to build a system that integrates and analyzes fertility-related data to uncover trends, identify driving factors, and support data-driven insights into global population patterns.
-
-### Insights and Solutions:
-This project aims to uncover:
-- How has fertility rate changed globally over time
-- Which countries have the highest/lowest rates
-- Is fertility declining as GDP rises
-- Does female education reduce fertility rates
-- Are developed countries below replacement level
