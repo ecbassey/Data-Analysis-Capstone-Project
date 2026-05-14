@@ -23,6 +23,11 @@ st.markdown("""
           padding-left: 3rem;
           padding-right: 3rem;
      }
+    .custom-text {
+        font-size: 18px;
+        color: #1f1f1f;
+        font-weight: 500;
+}   
 
     h1, h2, h3 {
         color: ##00C4B4;
@@ -175,6 +180,9 @@ ax.set_title("Airport Bottlenecks: Traffic vs Delay (Quadrant View)")
 # 
 ax.text(x_mean * 1.5, y_mean * 1.5, "Above Average Delay", fontsize=14, color='red')
 
+
 st.pyplot(fig)
 
 
+st.markdown('<p class="custom-text"><br><br>Major airports need to improve on congestion as a whole'
+'</p>', unsafe_allow_html=True)

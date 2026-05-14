@@ -40,7 +40,9 @@ def card(title, value):
 card("Insights:", """
 - Airline Reliability Varies Significantly: Operational efficiency differs across carriers. <br><br>
 - Delays Increase during the summer months: Corresponds to an increase in total flights.<br><br>
+- Weather-related delays vary, possibly because some airlines operate more frequently in regions that 
+     are more susceptible to adverse weather conditions.<br><br>
 - Major Bottlenecks: Airports with highest traffic also show higher delay times.  <br><br>
 - Hub-heavy regions have more congestion<br><br> <br>
-- Cancelations are higher during summer months<br><br>
+- Cancelations are higher during winter months.<br><br>
 """)

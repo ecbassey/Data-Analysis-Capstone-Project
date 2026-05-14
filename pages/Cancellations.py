@@ -53,7 +53,9 @@ result = (
     .head(10)
 )
 
- 
+#df['year_not_2020'] = [2018, 2019, 2021, 2022, 2023, 2034]
+df_filtered = df[df['year'] != 2020]
+
  #Pivot table
 pivot = df.pivot_table(
     index='year',
@@ -62,6 +64,14 @@ pivot = df.pivot_table(
     aggfunc='mean'
 )
 pivot
+
+pivot_2020 = df_filtered.pivot_table(
+    index='year',
+    columns='carrier_name',
+    values='arr_cancelled',
+    aggfunc='mean'
+)
+
 
 # fig = px.line(
 #     result,
@@ -83,14 +93,14 @@ pivot
 
 
 
-pivot_reset = pivot.reset_index()
-fig = px.line(
-    pivot_reset,
-    x='year',
-    y=pivot_reset.columns[1:],  # all airline columns
-    title="Cancellation Rate by Airline"
-)
-st.plotly_chart(fig, use_container_width=True)
+pivot_reset = pivot_2020.reset_index()
+# fig = px.line(
+#     pivot_reset,
+#     x='year',
+#     y=pivot_reset.columns[1:],  # all airline columns
+#     title="Cancellation Rate by Airline"
+# )
+# st.plotly_chart(fig, use_container_width=True)
 
 
 
@@ -122,7 +132,7 @@ result_month = (
 
  
  #Pivot table
-pivot2 = df.pivot_table(
+pivot2 = df_filtered.pivot_table(
     index='month',
     columns='carrier_name',
     values='arr_cancelled',
@@ -134,7 +144,17 @@ pivot2_reset = pivot2.reset_index()
 fig = px.line(
     pivot2_reset,
     x='month',
-    y=pivot_reset.columns[1:],  # all airline columns
+    y=pivot_reset.columns[1:9],  # all airline columns
     title="Monthly Cancellation Rate by Airline"
 )
 st.plotly_chart(fig, use_container_width=True)
+
+
+## last select airline
+airlines2 = st.multiselect(
+    "Select",
+    pivot2.columns,
+    default=pivot2.columns[:3]
+)
+filtered_pivot2 = pivot2[airlines2]
+st.line_chart(filtered_pivot2)

@@ -19,6 +19,11 @@ st.markdown("""
           padding-left: 3rem;
           padding-right: 3rem;
      }
+    .custom-text {
+        font-size: 18px;
+        color: #1f1f1f;
+        font-weight: 500;
+}   
 
     h1, h2, h3 {
         color: ##00C4B4;
@@ -239,3 +244,9 @@ st.plotly_chart(fig, use_container_width=True)
 # )
 
 # st.plotly_chart(fig, use_container_width=True)
+
+st.markdown('<p class="custom-text"><br><br>Weather-related delays vary, possibly because some airlines operate more frequently in regions that are more susceptible to adverse weather conditions.'
+'</p>', unsafe_allow_html=True)
+
+st.markdown('<p class="custom-text">Delta Air Lines is comparatively more punctual than other airlines.'
+'</p>', unsafe_allow_html=True)

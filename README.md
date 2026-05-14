@@ -7,7 +7,7 @@
 [Streamlit: Project Link](https://ecbassey-data-analysis-capstone-project-app-37dptu.streamlit.app/)
 
 ### Problem Statement
-This project analyzes how COVID-19 impacted airline performance in the U.S., what recovery look like through delays, cancellations, and airport congestion patterns. The project would analyze flight performance, analyze airline, analyze airport congestion and identify delay patterns.
+This project aims to identify the most reliable airlines, peak delay periods, major airport bottlenecks, and key factors driving delays, while uncovering geographic patterns to support data-driven insights and operational improvements. 
 
 
 ### Tools/Skills use:
@@ -20,13 +20,13 @@ This project analyzes how COVID-19 impacted airline performance in the U.S., wha
 
 
 ### Insights and Solutions:
-This project aims to transform raw flight data into meaningful insights that help airlines, airports, and stakeholders better understand and manage delays and cancellations. This project aims to uncover:
-- Which airline is most reliable
-- What month has the highest delays - Time-based trends in delays (months, seasons, etc.)
+This project aims to transform raw flight data into meaningful insights that help airlines, airports, and stakeholders better understand and manage delays and cancellations. This project aims to help airline stakeholders answer key questions such as:
+- How reliable is my airline
+- What month has the highest delays (months, seasons, etc.)
 - Did the industry recover after COVID
 - Which airports are bottlenecks
 - What factors most influence delays
-- Delay and cancellation patterns across different airlines
+- What are the delay and cancellation patterns across different airlines
 
 
 ### Business and community impact of this anlysis:

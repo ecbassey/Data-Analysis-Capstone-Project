@@ -20,6 +20,12 @@ st.markdown("""
           padding-left: 3rem;
           padding-right: 3rem;
      }
+    
+    .custom-text {
+        font-size: 18px;
+        color: #1f1f1f;
+        font-weight: 500;
+}   
 
     h1, h2, h3 {
         color: #088f8f;
@@ -49,6 +55,8 @@ reliability = analyzer.airline_reliability()
 
 
 st.subheader("Airline Reliability: Which airline is most reliable")
+#st.text("STAKEHOLDER QUESTION: How reliable are we?")
+st.markdown('<p class="custom-text">STAKEHOLDER QUESTION: How reliable are we?<br><br></p>', unsafe_allow_html=True)
 top_n = st.slider("Number of airlines", 5, 20, 10)
 top_airlines = reliability.head(top_n)
 st.dataframe(top_airlines)
@@ -128,9 +136,17 @@ ax.set_ylabel("Average Delay (minutes)")
 ax.set_title("Airline Reliability: Quadrant Analysis")
 
 #ax.text(0.05, y_mean + 50, "Rare but Severe", fontsize=12)
-ax.text(x_mean * 1.5, y_mean * 1.5, "Worst", fontsize=14, color='red')
-ax.text(x_mean * 0.1, y_mean * 1.5, "Infrequent/Large", fontsize=14, color='blue')
-ax.text(x_mean * 0.1, y_mean * 0.8, "Best", fontsize=14, color='green')
-ax.text(x_mean * 1.5, y_mean * 0.8, "Frequent/Small Delays", fontsize=14, color='green')
+ax.text(x_mean * 1.2, y_mean * 1.5, "Worst", fontsize=14, color='red')
+ax.text(x_mean * 0.5, y_mean * 1.5, "Infrequent/Large", fontsize=14, color='blue')
+ax.text(x_mean * 0.5, y_mean * 0.8, "Best", fontsize=14, color='green')
+ax.text(x_mean * 1.2, y_mean * 0.8, "Frequent/Small Delays", fontsize=14, color='green')
 
 st.pyplot(fig)
+
+
+
+
+st.markdown('<p class="custom-text"><br><br>Most Realiable in 2018: Delta, Alaska, Horizon etc'
+'</p>', unsafe_allow_html=True)
+st.markdown('<p class="custom-text"><br><br>Most Realiable in 2024: Delta, Republic, Horizon etc<br><br>'
+'</p>', unsafe_allow_html=True)
