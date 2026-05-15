@@ -14,9 +14,15 @@ st.title("Cancellation Rate")
 st.markdown("""
     <style>
     .stApp {
-        background-color: #b3e0dc;
+        background-color: #90d2cb;
         color: white;
     }
+
+            .custom-text {
+        font-size: 20px  !important;   /* Increase font size */
+        color: #1f1f1f;
+        font-weight: 500;
+}   
 
      .block-container {
           #padding-top: 2rem;
@@ -158,3 +164,7 @@ airlines2 = st.multiselect(
 )
 filtered_pivot2 = pivot2[airlines2]
 st.line_chart(filtered_pivot2)
+
+
+st.markdown('<p class="custom-text"><br><br>Cancelations are higher during winter months'
+'</p>', unsafe_allow_html=True)

@@ -62,6 +62,7 @@ class Analyzer:
     
         return (
             self.df.groupby('airport')
+            
             .agg(
             avg_delay=('arr_delay', 'mean'),
             traffic=('arr_flights', 'sum')

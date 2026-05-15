@@ -24,7 +24,7 @@ st.markdown("""
           padding-right: 3rem;
      }
     .custom-text {
-        font-size: 18px;
+        font-size: 20px  !important;   /* Increase font size */
         color: #1f1f1f;
         font-weight: 500;
 }   
@@ -85,6 +85,40 @@ filtered.sort_values(by='avg_delay').tail(10)['avg_delay'].plot(
     ax=ax
 )
 st.pyplot(fig)
+####################################
+
+#############################
+
+# fig, ax = plt.subplots(figsize=(10,6))
+
+# # Scatter plot for correlation
+# ax.scatter(
+#     filtered['traffic'],
+#     filtered['avg_delay']
+# )
+
+# # Add labels (optional)
+# for i, row in filtered.iterrows():
+#     ax.text(
+#         row['traffic'],
+#         row['avg_delay'],
+#         row['airport'],   # replace with your actual airport column name
+#         fontsize=8
+#     )
+
+# # Labels and title
+# ax.set_xlabel("Traffic")
+# ax.set_ylabel("Average Delay")
+# ax.set_title("Correlation Between Traffic and Average Delay")
+
+# st.pyplot(fig)
+
+
+
+
+
+########################################
+
 
 # BOTTLE NECK ANALYSIS END
 ##
@@ -186,3 +220,4 @@ st.pyplot(fig)
 
 st.markdown('<p class="custom-text"><br><br>Major airports need to improve on congestion as a whole'
 '</p>', unsafe_allow_html=True)
+

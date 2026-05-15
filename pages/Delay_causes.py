@@ -10,7 +10,7 @@ from analyzer import Analyzer
 st.markdown("""
     <style>
     .stApp {
-        background-color: #b3e0dc;
+        background-color: #90d2cb;
         color: white;
     }
 
@@ -56,13 +56,26 @@ airline_perf = (
 ########################################
 ########################################
 
-airline_factor = filtered_df.groupby('carrier_name')[[
+airline_factor2 = filtered_df.groupby('carrier_name')[[
     'carrier_delay',
     'weather_delay',
     'nas_delay',
     'security_delay',
     'late_aircraft_delay'
 ]].mean().nlargest(10, 'carrier_delay')
+
+airline_factor = (
+    filtered_df.groupby('carrier_name')[[
+        'carrier_delay',
+        'weather_delay',
+        'nas_delay',
+        'security_delay',
+        'late_aircraft_delay'
+    ]]
+    .mean()
+    .sort_values(by='carrier_delay', ascending=False)
+    .head(10)
+)
 
 df_long = airline_factor.reset_index().melt(
     id_vars='carrier_name',

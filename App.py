@@ -10,6 +10,11 @@ st.markdown("""
         background-color: #b3e0dc;
         color: white;
     }
+     .custom-text {
+        font-size: 18px;
+        color: #1f1f1f;
+        font-weight: 500;
+}          
 
     h1, h2, h3 {
         color: ##00C4B4;
@@ -130,7 +135,7 @@ def card(title, value):
             box-shadow: 10px 4px 10px rgba(0,0,0,0.3);
         ">
             <h2 style="color: #000000;">{title}</h2>
-            <h4 style="font-size:18px;">{value}</h4>            
+            <h4 style="font-size:20px;">{value}</h4>            
         </div>
     """, unsafe_allow_html=True)
 

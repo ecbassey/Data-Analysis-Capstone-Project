@@ -11,7 +11,7 @@ import plotly.express as px
 st.markdown("""
     <style>
     .stApp {
-        background-color: #b3e0dc;
+        background-color: #90d2cb;
         color: white;
     }
 
@@ -22,7 +22,7 @@ st.markdown("""
      }
     
     .custom-text {
-        font-size: 18px;
+        font-size: 18px !important;
         color: #1f1f1f;
         font-weight: 500;
 }   
@@ -80,7 +80,38 @@ ax.set_title("Airline Delay (Per minute)")
 ax.set_xlabel("Delays")
 st.pyplot(fig)
 
+###################################
+# fig, ax = plt.subplots(figsize=(12,10))
+# top_airlines['total_flights'].sort_values().plot(
+#     kind='barh',
+#     ax=ax
+# )
+# ax.set_title("Airline Delay (Per minute)")
+# ax.set_xlabel("total_flights")
+# st.pyplot(fig)
 
+###################################
+
+fig, ax = plt.subplots(figsize=(10,6))
+
+# Scatter plot
+ax.scatter(
+    top_airlines['total_flights'],
+    top_airlines['avg_delay']
+)
+
+# Labels
+ax.set_xlabel("Total Flights")
+ax.set_ylabel("Average Delay (Minutes)")
+ax.set_title("Correlation Between Total Flights and Average Delay")
+
+st.pyplot(fig)
+
+
+############################
+
+
+#############################
 
 #scatter plot
 # fig, ax = plt.subplots(figsize=(12,8))
@@ -148,5 +179,5 @@ st.pyplot(fig)
 
 st.markdown('<p class="custom-text"><br><br>Most Realiable in 2018: Delta, Alaska, Horizon etc'
 '</p>', unsafe_allow_html=True)
-st.markdown('<p class="custom-text"><br><br>Most Realiable in 2024: Delta, Republic, Horizon etc<br><br>'
+st.markdown('<p class="custom-text">Most Realiable in 2024: Delta, Republic, Horizon etc'
 '</p>', unsafe_allow_html=True)
