@@ -11,7 +11,7 @@ st.markdown("""
         color: white;
     }
      .custom-text {
-        font-size: 18px;
+        font-size: 20px;
         color: #1f1f1f;
         font-weight: 500;
 }          
@@ -34,6 +34,7 @@ st.markdown("""
         U.S. Airline Delay Intelligence System
     </h1>
     <h3 style='
+        font-size: 24px;    
         text-align: center; 
         color: #088f8f;
         font-weight: 300;
@@ -71,6 +72,7 @@ with col2:
     st.image("pages/delay1.jpg")
     # st.subheader("Column 2")
     # st.write("More content here")
+
 
 
 

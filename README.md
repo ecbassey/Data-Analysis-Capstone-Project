@@ -9,6 +9,8 @@
 ### Problem Statement
 This project aims to identify the most reliable airlines, peak delay periods, major airport bottlenecks, and key factors driving delays, while uncovering geographic patterns to support data-driven insights and operational improvements. 
 
+The goal of the Airline Delay Intelligence System is to provide a dynamic, data-driven platform that transforms airline operational data into actionable insights for monitoring performance, identifying bottlenecks, and improving decision-making across airlines and airports.
+
 
 ### Tools/Skills use:
 - Data ingestion: scraping, CSV
