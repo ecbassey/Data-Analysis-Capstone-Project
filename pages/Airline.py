@@ -92,6 +92,26 @@ st.pyplot(fig)
 
 ###################################
 
+# fig, ax = plt.subplots(figsize=(10,6))
+
+# # Scatter plot
+# ax.scatter(
+#     top_airlines['total_flights'],
+#     top_airlines['avg_delay']
+# )
+
+# # Labels
+# ax.set_xlabel("Total Flights")
+# ax.set_ylabel("Average Delay (Minutes)")
+# ax.set_title("Correlation Between Total Flights and Average Delay")
+
+# st.pyplot(fig)
+
+
+############################
+import numpy as np
+
+
 fig, ax = plt.subplots(figsize=(10,6))
 
 # Scatter plot
@@ -100,6 +120,13 @@ ax.scatter(
     top_airlines['avg_delay']
 )
 
+# Fit line (linear regression)
+x = top_airlines['total_flights']
+y = top_airlines['avg_delay']
+
+m, b = np.polyfit(x, y, 1)
+ax.plot(x, m*x + b, color='red')
+
 # Labels
 ax.set_xlabel("Total Flights")
 ax.set_ylabel("Average Delay (Minutes)")
@@ -107,11 +134,11 @@ ax.set_title("Correlation Between Total Flights and Average Delay")
 
 st.pyplot(fig)
 
-
-############################
-
-
 #############################
+st.markdown('<p class="custom-text">Flat line = No Correlation<br><br>'
+'</p>', unsafe_allow_html=True)
+
+
 
 #scatter plot
 # fig, ax = plt.subplots(figsize=(12,8))
