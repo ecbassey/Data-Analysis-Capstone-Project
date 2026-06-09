@@ -1,6 +1,6 @@
 # Data-Analysis-Capstone-Project
 
-## OPTION 1: U.S. Airline Delay Intelligence System
+## U.S. Airline Delay Intelligence System
 
 
 

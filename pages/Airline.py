@@ -135,7 +135,7 @@ ax.set_title("Correlation Between Total Flights and Average Delay")
 st.pyplot(fig)
 
 #############################
-st.markdown('<p class="custom-text">Flat line = No Correlation<br><br>'
+st.markdown('<p class="custom-text">Flat line = No Correlation<br><br> '
 '</p>', unsafe_allow_html=True)
 
 
